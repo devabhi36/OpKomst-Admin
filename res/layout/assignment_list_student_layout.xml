@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#fff">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="15dp"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="8dp"
+        android:background="#F3F4EF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#F3F4EF"
+                android:padding="3dp"
+                android:paddingLeft="5dp">
+
+                <TextView
+                    android:id="@+id/stu_roll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1605213001"
+                    android:textAppearance="@style/FacultyProfileText"/>
+
+                <TextView
+                    android:id="@+id/clickView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View"
+                    android:layout_centerHorizontal="true"
+                    android:textAppearance="@style/FacultyProfileText"
+                    android:textColor="@color/blue"/>
+
+                <Switch
+                    android:id="@+id/assignmentStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/checkPlagiarism"
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:background="@drawable/buttonbackground"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="Check Plagiarism"
+                    android:fontFamily="@font/worksans_regular"
+                    android:textSize="16sp"
+                    android:textColor="#fff"
+                    android:textStyle="bold"/>
+
+                <Button
+                    android:id="@+id/rejectAssignment"
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:background="@drawable/buttonbackgroundred"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="Reject"
+                    android:fontFamily="@font/worksans_regular"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

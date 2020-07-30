@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="?android:windowBackground"
+    tools:context=".Faculty.ViewGivenAssignments"
+    android:clickable="true"
+    android:focusable="true">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="15dp"
+        app:cardCornerRadius="15dp"
+        android:layout_margin="20dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ASSIGNMENTS"
+                    android:gravity="center"
+                    android:background="#FFA500"
+                    android:textAppearance="@style/FacultyProfileText"
+                    android:textSize="20dp"
+                    android:textAllCaps="true"
+                    android:fontFamily="@font/roboto_medium" />
+                <TextView
+                    android:id="@+id/noStudents"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="NO STUDENTS AVAILABLE"
+                    android:textSize="22dp"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:textAppearance="@style/FacultyProfileText"
+                    android:visibility="gone"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll2"
+                android:layout_below="@+id/ll1"
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:orientation="vertical">
+                <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                    android:id="@+id/refreshLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ListView
+                        android:id="@+id/listAssignments"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+            </LinearLayout>
+            <Button
+                android:id="@+id/add_assignment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonbackground"
+                android:layout_margin="15dp"
+                android:layout_below="@+id/ll2"
+                android:text="+Add Assignment"
+                android:textAllCaps="true"
+                android:textAppearance="@style/FacultyProfileText"
+                android:textColor="#fff"
+                android:textSize="18dp"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/chat_background"
+    tools:context=".Faculty.ChatActivity">
+
+   <include
+       android:id="@+id/my_toolbar"
+       layout="@layout/bar_layout"/>
+
+   <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+       android:id="@+id/refreshLayoutChat"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_below="@+id/my_toolbar"
+       android:layout_above="@+id/editTextScroll">
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/msg_chat"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent" />
+
+   </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+   <ScrollView
+       android:id="@+id/editTextScroll"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="5dp"
+       android:layout_marginRight="5dp"
+       android:layout_marginBottom="5dp"
+       android:layout_alignParentBottom="true"
+       android:background="@drawable/edittext_background"
+       android:orientation="horizontal">
+
+      <EditText
+          android:id="@+id/msg_text"
+          android:hint="Type a message"
+          android:layout_gravity="center"
+          android:layout_marginLeft="10dp"
+          android:layout_width="0dip"
+          android:layout_weight="1"
+          android:layout_height="wrap_content"
+          android:maxLines="7"
+          android:minLines="1"/>
+
+      <ImageButton
+          android:id="@+id/attachment"
+          android:background="@drawable/attach"
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:gravity="center"
+          android:layout_gravity="center"/>
+
+      <ImageButton
+          android:id="@+id/msg_send"
+          android:background="@drawable/action_send"
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:gravity="center"
+          android:layout_gravity="center"
+          android:visibility="gone"/>
+
+      <ImageButton
+          android:id="@+id/camera"
+          android:background="@drawable/camera"
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:gravity="center"
+          android:layout_gravity="center"/>
+
+   </LinearLayout>
+   </ScrollView>
+</RelativeLayout>

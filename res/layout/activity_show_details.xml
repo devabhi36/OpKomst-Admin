@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/AppTheme.NoActionBar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Faculty.ShowDetails"
+    android:background="#FFA500"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/my_toolbar"
+        layout="@layout/bar_layout"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="#fff"
+        app:cardElevation="15dp"
+        app:cardCornerRadius="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profileImageHome"
+                android:layout_gravity="center"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:civ_border_width="1dp"
+                app:civ_border_color="#000"
+                android:src="@drawable/user" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="370dp"
+                android:layout_marginLeft="10dp">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/nameH"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NAME:"
+                        android:textAppearance="@style/StudentProfileText" />
+
+                    <TextView
+                        android:id="@+id/nameV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/nameH"
+                        android:layout_marginLeft="58dp"
+                        android:layout_toRightOf="@+id/nameH"
+                        android:textAllCaps="true"
+                        android:textIsSelectable="true"
+                        android:textAppearance="@style/StudentProfileText" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/rollH"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ROLL NO:"
+                        android:textAppearance="@style/StudentProfileText" />
+
+                    <TextView
+                        android:id="@+id/rollV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/rollH"
+                        android:layout_marginLeft="34dp"
+                        android:layout_toRightOf="@+id/rollH"
+                        android:textAllCaps="true"
+                        android:textIsSelectable="true"
+                        android:textAppearance="@style/StudentProfileText" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/branchH"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BRANCH:"
+                        android:textAppearance="@style/StudentProfileText" />
+
+                    <TextView
+                        android:id="@+id/branchV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/branchH"
+                        android:layout_marginLeft="38dp"
+                        android:layout_toRightOf="@+id/branchH"
+                        android:textAllCaps="true"
+                        android:textIsSelectable="true"
+                        android:textAppearance="@style/StudentProfileText" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/emailH"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="EMAIL ID:"
+                        android:textAppearance="@style/StudentProfileText" />
+
+                    <TextView
+                        android:id="@+id/emailV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/emailH"
+                        android:layout_marginLeft="33dp"
+                        android:layout_toRightOf="@+id/emailH"
+                        android:textIsSelectable="true"
+                        android:textAppearance="@style/StudentProfileText"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/contactH"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CONTACT:"
+                        android:textAppearance="@style/StudentProfileText" />
+
+                    <TextView
+                        android:id="@+id/contactV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/contactH"
+                        android:layout_marginLeft="29.5dp"
+                        android:layout_toRightOf="@+id/contactH"
+                        android:textAllCaps="true"
+                        android:textIsSelectable="true"
+                        android:textAppearance="@style/StudentProfileText" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/yearH"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="YEAR:"
+                        android:textAppearance="@style/StudentProfileText" />
+
+                    <TextView
+                        android:id="@+id/yearV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/yearH"
+                        android:layout_marginLeft="65dp"
+                        android:layout_toRightOf="@+id/yearH"
+                        android:textAllCaps="true"
+                        android:textIsSelectable="true"
+                        android:textAppearance="@style/StudentProfileText" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/lateralH"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="LATERAL:"
+                        android:textAppearance="@style/StudentProfileText" />
+
+                    <TextView
+                        android:id="@+id/lateralV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/lateralH"
+                        android:layout_marginLeft="34dp"
+                        android:layout_toRightOf="@+id/lateralH"
+                        android:textIsSelectable="true"
+                        android:textAppearance="@style/StudentProfileText"
+                        android:textAllCaps="true"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/enrlH"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ENROLLMENT NO:"
+                        android:textAppearance="@style/StudentProfileText" />
+
+                    <TextView
+                        android:id="@+id/enrlV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/enrlH"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/enrlH"
+                        android:textIsSelectable="true"
+                        android:textAppearance="@style/StudentProfileText"
+                        android:textAllCaps="true"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/classAttendedH"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CLASSES ATTENDED:"
+                        android:textAppearance="@style/StudentProfileText" />
+
+                    <TextView
+                        android:id="@+id/classAttendedV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/classAttendedH"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/classAttendedH"
+                        android:textIsSelectable="true"
+                        android:textAppearance="@style/StudentProfileText"
+                        android:textAllCaps="true"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/attendanceperH"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ATTENDANCE:"
+                        android:layout_marginBottom="10dp"
+                        android:textAppearance="@style/StudentProfileText" />
+
+                    <TextView
+                        android:id="@+id/attendanceperV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/attendanceperH"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/attendanceperH"
+                        android:textIsSelectable="true"
+                        android:textAppearance="@style/StudentProfileText"
+                        android:textAllCaps="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+                </ScrollView>
+            </HorizontalScrollView>
+
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/colorPrimary"/>
+
+        <LinearLayout
+            android:id="@+id/leniarLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textAppearance="@style/StudentProfileText"
+                android:text="ASSIGNMENTS:"
+                android:textStyle="bold" />
+
+            <ListView
+                android:id="@+id/assignmentList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </ListView>
+        </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

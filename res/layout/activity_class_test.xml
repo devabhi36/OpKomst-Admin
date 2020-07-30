@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="?android:windowBackground"
+    tools:context=".Faculty.ClassTestActivity"
+    android:clickable="true"
+    android:focusable="true">
+
+    <include
+        android:id="@+id/my_toolbar"
+        layout="@layout/bar_layout"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        app:cardElevation="15dp"
+        app:cardCornerRadius="15dp"
+        android:textAlignment="center">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SUBJECT NAME"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textAppearance="@style/FacultyProfileText"
+            android:textSize="20dp"
+            android:background="#FFA500"
+            android:textAllCaps="true"
+            android:fontFamily="@font/roboto_medium" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="15dp"
+        app:cardCornerRadius="15dp"
+        android:layout_margin="20dp">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableLayout
+                        android:id="@+id/marksTable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:stretchColumns="*"
+                        android:padding="10dp"
+                        android:background="#fff">
+                    </TableLayout>
+                </LinearLayout>
+            </ScrollView>
+        </HorizontalScrollView>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/submitMarks"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/buttonbackground"
+        android:text="UPDATE MARKS"
+        android:fontFamily="@font/barlow_m"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#fff"/>
+
+</LinearLayout>

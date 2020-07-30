@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:theme="@style/AppTheme.NoActionBar"
+    android:layout_width="375dp"
+    android:layout_height="220dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    app:cardBackgroundColor="#F3F4EF"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="15dp"
+    android:layout_margin="15dp"
+    app:cardCornerRadius="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/inputDialogTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter name of the Notice..."
+            android:textStyle="bold"
+            android:textAppearance="@style/FacultyProfileText"
+            android:textSize="18dp"/>
+
+        <EditText
+            android:id="@+id/inputNoticeName"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/edittext_background"/>
+
+        <Button
+            android:id="@+id/enterName"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:text="ENTER"
+            android:textAppearance="@style/FacultyProfileText"
+            android:background="@drawable/buttonbackground"
+            android:textColor="#fff"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

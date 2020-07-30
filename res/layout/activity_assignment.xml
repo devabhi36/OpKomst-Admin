@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Faculty.AssignmentActivity"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/my_toolbar"
+        layout="@layout/bar_layout"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="15dp"
+        app:cardCornerRadius="15dp"
+        android:layout_margin="20dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/view_given_assignment"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="15dp"
+                    android:text="VIEW GIVEN ASSIGNMENT"
+                    android:background="@drawable/buttonbackground"
+                    android:textAllCaps="true"
+                    android:textAppearance="@style/FacultyProfileText"
+                    android:textColor="#fff"
+                    android:textSize="16dp"/>
+
+            </LinearLayout>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/window"
+                android:layout_below="@+id/ll1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardElevation="15dp"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="8dp"
+                android:background="#F3F4EF">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="#F3F4EF"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ACCEPTING ASSIGNMENTS?"
+                        android:textAppearance="@style/FacultyProfileText"/>
+
+                    <Switch
+                        android:id="@+id/windowStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:theme="@style/SCBSwitch" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/window"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="#F3F4EF"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Roll No"
+                        android:layout_marginLeft="15dp"
+                        android:textAppearance="@style/FacultyProfileText"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Submissions"
+                        android:layout_centerHorizontal="true"
+                        android:textAppearance="@style/FacultyProfileText"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:textAppearance="@style/FacultyProfileText"
+                        android:text="Accept"
+                        android:textStyle="bold"/>
+
+                </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/ll2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/noSubmissions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NO SUBMISSIONS YET"
+                    android:layout_gravity="center"
+                    android:textSize="20dp"
+                    android:textColor="#000"
+                    android:visibility="gone"
+                    android:layout_marginTop="25dp"/>
+                <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                    android:id="@+id/refreshLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/stu_assignment_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+                </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+            </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/uid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="300dp"
+        android:text="ID"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/uname"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/uid"
+        android:layout_toRightOf="@+id/uid"
+        android:layout_marginLeft="90dp"
+        android:maxLines="1"
+        android:inputType="textCapCharacters"/>
+
+    <TextView
+        android:id="@+id/pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="70dp"
+        android:text="Password"
+        android:textSize="20dp"
+        android:layout_below="@+id/uid"/>
+
+    <EditText
+        android:id="@+id/epass"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/pass"
+        android:layout_toRightOf="@+id/pass"
+        android:layout_marginLeft="20dp"
+        android:maxLines="1"/>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pass"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="LOGIN"/>
+
+    <TextView
+        android:id="@+id/sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login"
+        android:text="SIGN UP?"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:textSize="25dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"/>
+</RelativeLayout>

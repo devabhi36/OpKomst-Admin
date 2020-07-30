@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Faculty.SubjectActions"
+    android:background="?android:windowBackground"
+    android:id="@+id/firstFragment">
+    <!--android:background="?android:windowBackground"-->
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="#fff"
+        app:cardElevation="15dp"
+        app:cardCornerRadius="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="15dp">
+
+            <TextView
+                android:id="@+id/selectedSubject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textAppearance="@style/FacultyProfileText"
+                android:textSize="22sp"
+                android:layout_marginBottom="20dp"
+                android:text="Your Selected Subject"
+                android:textStyle="bold"
+                android:textAllCaps="true"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        app:cardElevation="15dp">
+                    <Button
+                        android:id="@+id/mark_attendance"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/headingbackground"
+                        android:drawableStart="@drawable/attendance"
+                        android:paddingStart="10dp"
+                        android:text="MARK ATTENDANCE"
+                        android:textAppearance="@style/buttonText"/>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="60dp"
+                        app:cardElevation="15dp">
+                    <Button
+                        android:id="@+id/give_assignment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/headingbackground"
+                        android:drawableStart="@drawable/assignment"
+                        android:paddingStart="10dp"
+                        android:text="GIVE ASSIGNMENT"
+                        android:textAppearance="@style/buttonText"/>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="60dp"
+                        app:cardElevation="15dp">
+                    <Button
+                        android:id="@+id/student_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/headingbackground"
+                        android:drawableStart="@drawable/view_details"
+                        android:paddingStart="10dp"
+                        android:text="STUDENT DETAILS"
+                        android:textAppearance="@style/buttonText"/>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="60dp"
+                        app:cardElevation="15dp">
+                    <Button
+                        android:id="@+id/view_attendance"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/headingbackground"
+                        android:drawableStart="@drawable/records"
+                        android:paddingStart="10dp"
+                        android:text="VIEW ATTENDANCE"
+                        android:textAppearance="@style/buttonText"/>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="60dp"
+                        android:layout_marginBottom="20dp"
+                        app:cardElevation="15dp">
+                        <Button
+                            android:id="@+id/upload_marks"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/headingbackground"
+                            android:drawableStart="@drawable/uploadmarks"
+                            android:paddingStart="10dp"
+                            android:text="UPLOAD MARKS"
+                            android:textAppearance="@style/buttonText"/>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

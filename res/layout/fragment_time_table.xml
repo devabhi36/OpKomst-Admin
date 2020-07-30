@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Faculty.TimeTableFragment"
+    android:id="@+id/slideF"
+    android:orientation="vertical"
+    android:background="?android:windowBackground"
+    android:focusable="true"
+    android:clickable="true">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardElevation="15dp"
+        app:cardCornerRadius="15dp"
+        android:layout_margin="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+
+        <Switch
+            android:id="@+id/oddEven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/semType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/oddEven"
+                android:layout_marginLeft="20dp"
+                android:text="Odd Semester"
+                android:textSize="16dp"
+                android:textColor="#000"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_below="@+id/oddEven"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:id="@+id/sem1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SEMESTER 1"
+                    android:layout_gravity="center"
+                    android:background="@drawable/buttonbackground"
+                    android:textColor="@color/white"
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"/>
+
+                <ListView
+                    android:id="@+id/sem1Days"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"/>
+
+                <Button
+                    android:id="@+id/sem2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SEMESTER 2"
+                    android:layout_gravity="center"
+                    android:background="@drawable/buttonbackground"
+                    android:textColor="@color/white"
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"/>
+
+                <ListView
+                    android:id="@+id/sem2Days"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"/>
+
+                <Button
+                    android:id="@+id/sem3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SEMESTER 3"
+                    android:layout_gravity="center"
+                    android:background="@drawable/buttonbackground"
+                    android:textColor="@color/white"
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"/>
+
+                <ListView
+                    android:id="@+id/sem3Days"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"/>
+
+                <Button
+                    android:id="@+id/sem4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SEMESTER 4"
+                    android:layout_gravity="center"
+                    android:background="@drawable/buttonbackground"
+                    android:textColor="@color/white"
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"/>
+
+                <ListView
+                    android:id="@+id/sem4Days"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"/>
+
+                <Button
+                    android:id="@+id/sem5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SEMESTER 5"
+                    android:layout_gravity="center"
+                    android:background="@drawable/buttonbackground"
+                    android:textColor="@color/white"
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"/>
+
+                <ListView
+                    android:id="@+id/sem5Days"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"/>
+
+                <Button
+                    android:id="@+id/sem6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SEMESTER 6"
+                    android:layout_gravity="center"
+                    android:background="@drawable/buttonbackground"
+                    android:textColor="@color/white"
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"/>
+
+                <ListView
+                    android:id="@+id/sem6Days"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"/>
+
+                <Button
+                    android:id="@+id/sem7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SEMESTER 7"
+                    android:layout_gravity="center"
+                    android:background="@drawable/buttonbackground"
+                    android:textColor="@color/white"
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"/>
+
+                <ListView
+                    android:id="@+id/sem7Days"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"/>
+
+                <Button
+                    android:id="@+id/sem8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SEMESTER 8"
+                    android:layout_gravity="center"
+                    android:background="@drawable/buttonbackground"
+                    android:textColor="@color/white"
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"/>
+
+                <ListView
+                    android:id="@+id/sem8Days"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"/>
+
+        </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
